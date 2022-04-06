@@ -1,0 +1,11 @@
+# Alias
+alias mntd='ntfs-3g /dev/sda1 /mnt/windata && echo "windata mounted!"'
+alias sudo='sudo '
+alias qb='qbittorrent-nox --daemon --webui-port=8090 && echo "qbittorrent started at 8090"'
+alias ls='ls -al'
+alias yay='paru'
+
+# tmux
+if [[ -n "$PS1" ]] && [[ -z "$TMUX" ]] && [[ -n "$SSH_CONNECTION" ]]; then
+  tmux attach-session -t ssh_tmux || tmux new-session -s ssh_tmux
+fi
