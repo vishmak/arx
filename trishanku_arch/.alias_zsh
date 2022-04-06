@@ -1,0 +1,3 @@
+# Alias
+alias yay='paru'
+alias ls='ls -al'
